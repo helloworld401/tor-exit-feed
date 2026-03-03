@@ -9,7 +9,14 @@
 Raw URL:
 - `https://raw.githubusercontent.com/helloworld401/tor-exit-feed/refs/heads/main/tor_exit_nodes.txt`
 
-## 🔄 Обновление
+## 🔄 Откуда обновляется список
+
+Источник данных:
+- `https://check.torproject.org/torbulkexitlist`
+
+Именно этот адрес используется workflow/скриптом для генерации нового `tor_exit_nodes.txt`.
+
+## 🔁 Обновление
 
 Список обновляется автоматически через **GitHub Actions**:
 - по расписанию (cron),
